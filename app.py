@@ -9,7 +9,7 @@ from tensorflow.keras.preprocessing import sequence # type: ignore
 
 word_index = imdb.get_word_index()
 
-model = tensorflow.keras.models.load_model('D:\SLit\movie-review-recommendation\model.h5')
+model = tensorflow.keras.models.load_model('/workspaces/movie-review-recommendation/model.h5')
 
 def transform_text(text):
   words = text.lower().split()
